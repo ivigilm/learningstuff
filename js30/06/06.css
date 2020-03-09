@@ -1,0 +1,11 @@
+#container {
+    background-color: lightcoral;
+    margin: auto;
+    width: 400px;
+}
+
+input {
+    display: block;
+    margin: auto;
+    width: 50%;
+}

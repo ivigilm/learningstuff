@@ -20,10 +20,33 @@
 
 ## 4. Array cardio
 
-· filter, map, sort, reduce methods
+· filter
+· map
+· sort
+· reduce
 
 ## 5. Image gallery
 
 · CSS flexbox => check "What the Flexbox" course for more
 · CSS transform (translateY), transition
 · JS events: transitionend
+
+## 6. Ajax type ahead
+
+· map
+· filter
+· regex
+· replace
+· match
+· fetch
+· spread operator
+
+## 7. Array cardio II
+
+· some
+· every
+· find
+· findIndex
+· slice
+· splice
+· spread operator
