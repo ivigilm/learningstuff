@@ -57,3 +57,19 @@
 · mousemove, mousedown, mouseup, mouseout events
 · array destructuring
 · hsl colors
+
+## 9. Dev Tools tricks
+
+· Break DOM element on attribute modifications
+· Interpolated vars on console
+· Styled text on console
+· console.warning
+· console.error
+· console.info
+· console.assert
+· console.clear
+· console.dir
+· console.group
+· console.count
+· console.time
+· console.table
