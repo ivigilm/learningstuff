@@ -50,3 +50,10 @@
 · slice
 · splice
 · spread operator
+
+## 8. Fun with canvas
+
+· HTML canvas element
+· mousemove, mousedown, mouseup, mouseout events
+· array destructuring
+· hsl colors

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#JavaScript30, exercise 8: Canvas</title>
+</head>
+
+<body>
+    <canvas></canvas>
+    <script>
+        const canvas = document.querySelector('canvas');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false; // checks if mouse button is clicked
+        let lastX = 0;
+        let lastY = 0;
+        let hue = 0;
+        let growingLine = true;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        ctx.strokeStyle = 'red';
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.lineWidth = 1;
+
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mousedown', (e) => {
+            isDrawing = true;
+            lastX = e.offsetX;
+            lastY = e.offsetY;
+        });
+        canvas.addEventListener('mouseup', () => isDrawing = false);
+        canvas.addEventListener('mouseout', () => isDrawing = false);
+
+        function draw(e) {
+            if (!isDrawing) return;
+
+            ctx.beginPath();
+            ctx.moveTo(lastX, lastY); // start point
+            ctx.lineTo(e.offsetX, e.offsetY); // end point
+            ctx.stroke();
+            [lastX, lastY] = [e.offsetX, e.offsetY]; // destructuring an array
+            ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+            hue++;
+            if (hue > 360) hue = 0;
+
+            if (growingLine) {
+                ctx.lineWidth++;
+            } else {
+                ctx.lineWidth--;
+            }
+
+            if (ctx.lineWidth === 360) {
+                growingLine = false;
+            } else if (ctx.lineWidth === 1) {
+                growingLine = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
