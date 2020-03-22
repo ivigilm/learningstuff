@@ -73,3 +73,9 @@
 · console.count
 · console.time
 · console.table
+
+## 10. Hold shift and check checkboxes
+
+· this inside function
+· boolean toggle
+· HTML checkbox
