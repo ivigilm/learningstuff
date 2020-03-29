@@ -1,0 +1,9 @@
+video,
+#videoControls {
+    width: 640px;
+}
+
+progress {
+    display: block;
+    width: 100%;
+}
