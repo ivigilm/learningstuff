@@ -79,3 +79,16 @@
 · this inside function
 · boolean toggle
 · HTML checkbox
+
+## 11.
+
+· Video event listeners (play, pause, timeupdate)
+· Video element methods (play, pause)
+· Video element attributes (paused, currentTime, duration)
+· Events click, keypress, input, mousemove, mousedown, mouseup
+
+## 12.
+
+· keyup event & e.key
+· splice
+· cornify library
