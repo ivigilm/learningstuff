@@ -80,15 +80,22 @@
 · boolean toggle
 · HTML checkbox
 
-## 11.
+## 11. Custom video player
 
 · Video event listeners (play, pause, timeupdate)
 · Video element methods (play, pause)
 · Video element attributes (paused, currentTime, duration)
 · Events click, keypress, input, mousemove, mousedown, mouseup
 
-## 12.
+## 12. Konami code (key sequence detection)
 
 · keyup event & e.key
 · splice
-· cornify library
+· cornify library: on konami, adds unicorn or rainbow to page
+
+## 13. Slide in on scroll
+
+· window.scrollY: number of pixels the document is scrolled vertically
+· window.innerHeight: interior height of the window in pixels
+· element.offsetTop: distance of current element relative to the top of the offsetParent node
+· debounce function: function that allows another function to run at most every X time
